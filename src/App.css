@@ -1,7 +1,19 @@
+/* Globel css */
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-style: normal;
+}
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
 
-
+/* The colour sheme i am using */
+/* When done like this i can easaily change any of the colours throughout the whole code */
 :root {
     --primary: #7a4caf;        
     --heading-color: #b0b0c0;  
@@ -10,4 +22,18 @@
     --darkblue: #101127;       
     --black: #000000;
     --white: #ffffff;
+  }
+
+  
+  .btn {
+    font-family: "Roboto";
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+
   }
