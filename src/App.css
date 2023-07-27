@@ -57,8 +57,18 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid var(--primary);
 }
 
+.btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
 .btn-primary {
   color: var(--white);
   background-color: var(--primary);
   border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+  color: var(--white);
+  background-color: var(--secondary);
 }
