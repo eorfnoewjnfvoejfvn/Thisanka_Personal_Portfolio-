@@ -1,5 +1,6 @@
 /* Globel css */
 
+/* Sets a default margin and font family for the whole body */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -8,6 +9,7 @@ body {
   font-style: normal;
 }
 
+/* Reset margins for headings and paragraphs */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -15,7 +17,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* The colour sheme i am using */
 /* When done like this i can easaily change any of the colours throughout the whole code */
 :root {
-    --primary: #7a4caf;        
+    --primary: #7a4caf;  
+    --secondary: #6428a7;       
     --heading-color: #b0b0c0;  
     --bg-shade: #1c1e25;       
     --github: #ff507e;         
@@ -24,16 +27,38 @@ h1, h2, h3, h4, h5, h6, p {
     --white: #ffffff;
   }
 
-  
-  .btn {
-    font-family: "Roboto";
-    display: inline-block;
-    padding: 14px 32px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    cursor: pointer;
-    text-align: center;
 
-  }
+.btn {
+  font-family: "Roboto";     /* Uses Roboto font for buttons */
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;            /* How round the buttons are */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;             /* makes the hover effect look smoother */
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
