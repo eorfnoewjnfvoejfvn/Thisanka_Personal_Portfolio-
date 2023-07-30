@@ -15,7 +15,7 @@ function Navbar() {
 
   useEffect(() => {  // Effect hook to handle changes when the window is resized
     const handleResize = () => {    
-      if (window.innerWidth <= 500) {     // Check if the window's inner width is less than or equal to 500 pixels
+      if (window.innerWidth <= 500) {     // Checks if the window's inner width is less than or equal to 500 pixels
         closeMenu;
       }
     };
@@ -63,6 +63,48 @@ function Navbar() {
               Home
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="MyPortfolio"
+              className="navbar--content"
+            >
+              Portfolio 
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="AboutMe"
+              className="navbar--content"
+            >
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="testimonial"
+              className="navbar--content"
+            >
+              Testimonials
+            </Link>
+          </li>
         </ul>
       </div>
       <Link
@@ -81,5 +123,4 @@ function Navbar() {
   );
 }
 
-// Export the 'Navbar' component as the default export
 export default Navbar;
