@@ -2,38 +2,84 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Navbar() {
-  // Manage the navigation menu's active status for each section eg. hero about
-  const [navActive, setNavActive] = useState(false);
+ 
+  const [navActive, setNavActive] = useState(false); // Declares a state variable 'navActive' to track the navigation menu's active state
 
-  // Toggles the navigation menu when hamburger icon is clicked
-  const toggleNav = () => {
+  const toggleNav = () => {   // Function to toggle the navigation menu's active state
     setNavActive(!navActive);
   };
-
-  // Closes the navigation menu when cliecked
-  const closeMenu = () => {
+                                 
+  const closeMenu = () => { // Function to close the navigation menu
     setNavActive(false);
   };
 
-  // Handle window resize to close menu on small screens
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu(); // Close the menu
+  useEffect(() => {  // Effect hook to handle changes when the window is resized
+    const handleResize = () => {    
+      if (window.innerWidth <= 500) {     // Check if the window's inner width is less than or equal to 500 pixels
+        closeMenu;
       }
     };
 
-    // Listens for window resize events
-    window.addEventListener("resize", handleResize);
+     window.addEventListener("resize", handleResize);  
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  // Close the menu on initial load for smaller screens
-  useEffect(() => {
+
+  useEffect(() => {  // Another effect hook to handle changes when the component initially renders
     if (window.innerWidth <= 1200) {
-      closeMenu(); // Close the menu
+      closeMenu;
     }
-  }, []);
+  }, []); 
+
+  return (
+    <nav className={`navbar ${navActive ? "active" : ""}`}>
+      <div>
+        <img src="./img/logo.svg" alt="Logoipsum" />
+      </div>
+      <a
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
+        onClick={toggleNav}
+      >
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+      </a>
+      <div className={`navbar--items ${navActive ? "active" : ""}`}>
+        <ul>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="heroSection"
+              className="navbar--content"
+            >
+              Home
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <Link
+        onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-outline-primary"
+      >
+        Contact Me
+      </Link>
+    </nav>
+  );
+}
+
+// Export the 'Navbar' component as the default export
+export default Navbar;
