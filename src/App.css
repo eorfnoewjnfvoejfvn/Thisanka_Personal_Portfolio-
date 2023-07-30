@@ -18,14 +18,14 @@ h1, h2, h3, h4, h5, h6, p {
 /* When done like this i can easaily change any of the colours throughout the whole code */
 
 :root {
-    --primary: #7a4caf;  
-    --secondary: #6428a7;       
-    --heading-color: #b0b0c0;  
-    --bg-shade: #1c1e25;       
-    --darkblue: #101127;       
-    --black: #000000;
-    --white: #ffffff;
-  }
+  --primary: #5e3bee;
+  --heading-color: #282938;
+  --bg-shade: #f5fcff;
+  --github: #e62872;
+  --darkblue: #1c1e53;
+  --black: #000000;
+  --white: #ffffff;
+}
 
 
 .btn {
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* Navbar Content */
 .navbar--content {
-  color: var(--darkblue);
+  color: var(--darkblue); 
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: var(--bg-shade);
+  background-color: var(--white);
 }
 .hero--section--content-box {
   display: flex;
