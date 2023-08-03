@@ -4,25 +4,25 @@
         "id": "1",
         "src": "./img/skills-1.png",
         "title": "Front-End",
-        "description": "Proficient in HTML, CSS, and JavaScript, with a strong focus on creating responsive and visually appealing web interfaces. Experienced in using modern frontend libraries and frameworks, such as React, to build interactive user experiences."
+        "description": "Proficient in HTML, CSS, JavaScript and react, with a focus on creating responsive and visually appealing web interfaces."
       },
       {
         "id": "2",
         "src": "./img/skills-2.png",
         "title": "Back-End",
-        "description": "Skilled in developing server-side applications using languages like Python and Node.js and server deployment to ensure efficient and secure backend operations."
+        "description": "Skilled in developing server-side applications using languages like Python and Node.js."
       },
       {
         "id": "3",
         "src": "./img/skills-3.png",
         "title": "UI & UX Design",
-        "description": "Passionate about crafting intuitive and user-centered designs. Proficient in creating wireframes, prototypes, and mockups using tools like Figma. Dedicated to delivering visually pleasing and functional user experiences."
+        "description": "Proficient in creating wireframes, prototypes, and mockups using tools like Figma."
       },
       {
         "id": "4",
         "src": "./img/skills-4.png",
         "title": "Webflow Development",
-        "description": "Experienced in using Vs code to design and develop responsive websites. Proficient in leveraging Vs code's features to create visually appealing and interactive web projects."
+        "description": "Experienced in using Vs code to design and develop responsive websites."
       }
     ]
 }
