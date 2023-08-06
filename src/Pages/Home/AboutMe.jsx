@@ -6,18 +6,16 @@ export default function AboutMe() {
       </div>
       <div className="hero--section--content--box about--section--box">
         <div className="hero--section--content">
-          <p className="section--title">About</p>
-          <h1 className="skills-section--heading">About Me</h1>
+          <p className="section--title">About Me</p>
+          <h1 className="skills-section--heading">Who am I?</h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae? Voluptatem, reprehenderit alias? Eligendi aperiam
-            tempora numquam sint odit optio.
+            I'm based in Queenstown, New Zealand, a place of stunning natural beauty. 
+            When I'm not immersed in code, you'll likely find me on the rugby field, 
+            channeling my competitive spirit and teamwork skills.
           </p>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae?
+            As an aspiring software engineer, I'm on a journey to turn my passion for technology into a fulfilling career. 
+            I'm a proud Sri Lankan, and my cultural background has instilled in me a strong work ethic and a commitment to embracing diversity.
           </p>
         </div>
       </div>
