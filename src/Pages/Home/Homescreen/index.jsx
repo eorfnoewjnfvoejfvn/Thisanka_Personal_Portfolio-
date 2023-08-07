@@ -2,6 +2,7 @@ import HeroSection from "../HeroSection";
 import Navbar from "../Navbar";
 import MySkills from "../MySkills";
 import AboutMe from "../AboutMe";
+import Testimonial from "../testimonial";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
         <HeroSection />
         <MySkills />
         <AboutMe />
+        <Testimonial />
       </>
     );
   }

@@ -31,7 +31,7 @@
         "id": "1",
         "count": "5",
         "src": "./img/avatar-image.png",
-        "description": "I had the privilege of working closely with Thisanka on a critical project. Their dedication to excellence and determination to deliver high-quality results are truly commendable.",
+        "description": "I had the privilege of working closely with Thisanka on a critical project.",
         "author_name": "Jonathan Foster",
         "author_designation": "CodeGenius Software"
       },
@@ -39,7 +39,7 @@
         "id": "2",
         "count": "5",
         "src": "./img/avatar-image-1.png",
-        "description": "Collaborating with Thisanka has been a fantastic experience. Their coding prowess and innovative thinking have made a significant impact on our software.",
+        "description": "Collaborating with Thisanka has been a fantastic experience.",
         "author_name": "Emily Martinez",
         "author_designation": "InnovaTech Innovations"
       },
@@ -47,7 +47,7 @@
         "id": "3",
         "count": "5",
         "src": "./img/avatar-image-2.png",
-        "description": "Thisanka's work is truly exceptional. Their expertise in software development has been a game-changer for our projects.",
+        "description": "Thisanka's work is truly exceptional. his skill in software development has been a game-changer",
         "author_name": "Alex Turner",
         "author_designation": "TechWave Solutions"
       }
